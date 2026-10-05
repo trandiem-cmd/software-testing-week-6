@@ -1,11 +1,11 @@
 import {divide} from '../src/calculator.js';
 
 describe('divide',() => {
-    it('divide one number by a non-zero number',() => {
+    it('divides one number by a non-zero number',() => {
         expect(divide(8,2)).toBe(4);
     }) 
 
-it('throws when divide one number by zero',() => {
+it('throws when dividing one number by zero',() => {
     expect(() => divide(10,0)).toThrow("Division by zero is not allowed");
 })
 
